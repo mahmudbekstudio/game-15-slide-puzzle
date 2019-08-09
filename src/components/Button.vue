@@ -25,7 +25,8 @@
                     width: config.buttonSize,
                     height: config.buttonSize,
                     lineHeight: config.buttonSize,
-                    fontSize: config.buttonFontSize
+                    fontSize: config.buttonFontSize,
+                    visibility: this.icon === config.iconEmpty ? 'hidden': 'visible'
                 }
             }
         },
@@ -45,6 +46,7 @@
         box-shadow: 2px 2px 4px silver;
         font-family: Verdana, Arial, SansSerif;
         cursor: pointer;
-        color: aliceblue;
+        margin: 3px;
+        user-select: none;
     }
 </style>
